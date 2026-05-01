@@ -1,97 +1,517 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Wattcher</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-      line-height: 1.6;
-      color: #222;
-    }
-    h1, h2 {
-      color: #111;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-    .footer {
-      font-size: 0.9em;
-      color: #666;
-      margin-top: 50px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wattcher | Dein Octopus Energy Tracker</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1a1a1a;
+            --accent-color: #00d1b2; /* Ein frisches "Energy"-Grün/Türkis */
+            --secondary-bg: #f5f5f5;
+            --card-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121212;
+                --text-color: #e0e0e0;
+                --secondary-bg: #1e1e1e;
+                --card-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        h2 { font-size: 1.5rem; border-bottom: 2px solid var(--accent-color); padding-bottom: 5px; margin-top: 40px; }
+        
+        .badge {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .card {
+            background-color: var(--secondary-bg);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 30px;
+        }
+
+        .disclosure {
+            font-size: 0.85rem;
+            background: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #ffeeba;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            .disclosure {
+                background: #2c2510;
+                color: #ffeeba;
+                border-left-color: #856404;
+            }
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        .legal-box {
+            font-size: 0.9rem;
+            white-space: pre-line;
+        }
+    </style>
 </head>
 <body>
 
-  <h1>Wattcher ⚡</h1>
-  <p>Wattcher hilft dir, deine Energiepreise und deinen Verbrauch einfach im Blick zu behalten – speziell für Octopus Energy Kunden.</p>
+    <div class="container">
+        <header>
+            <h1>Wattcher ⚡</h1>
+            <span class="badge">Inoffizieller Octopus Energy Tracker</span>
+            <p>Einfach, schnell und übersichtlich. Behalte deine Energiepreise im Griff.</p>
+        </header>
 
-  <div class="section">
-    <h2>Support</h2>
-    <p>Bei Fragen oder Problemen kannst du dich jederzeit melden:</p>
-    <p><strong>E-Mail:</strong> encirith@gmx.de </p>
-  </div>
+        <section class="card">
+            <h2>Über die App</h2>
+            <p>Wattcher ist dein Begleiter für den dynamischen Strommarkt. Analysiere deinen Verbrauch und finde die günstigsten Stunden des Tages.</p>
+            
+            <div class="disclosure">
+                <strong>Transparenz-Hinweis:</strong> 
+                Die Nutzung der App ist kostenlos. Wenn du die App unterstützen möchtest, kannst du dies über ein freiwilliges Trinkgeld tun oder meinen Empfehlungslink für Octopus Energy nutzen. Für dich entstehen dabei keine Kosten, aber wir erhalten beide eine Prämie.
+            </div>
+            
+            <p><strong>Support:</strong> Bei Problemen erreichst du mich unter: <br>
+            <em>[<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wattcher | Dein Octopus Energy Tracker</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1a1a1a;
+            --accent-color: #00d1b2; /* Ein frisches "Energy"-Grün/Türkis */
+            --secondary-bg: #f5f5f5;
+            --card-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
 
-  <div class="section">
-    <h2>Datenschutzerklärung</h2>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121212;
+                --text-color: #e0e0e0;
+                --secondary-bg: #1e1e1e;
+                --card-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            }
+        }
 
-    <p><strong>Verantwortlicher</strong><br>
-    Stefan Abeßer<br>
-    Friedrichring 5<br>
-    79098 Freiburg im Breisgau<br>
-    E-Mail: encirith@gmx.de</p>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
 
-    <p><strong>Verarbeitete Daten</strong><br>
-    Diese App verarbeitet Energieverbrauchsdaten, Tarif- und Preisdaten über die Octopus Energy API sowie technische Daten (z. B. Fehlerberichte).</p>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
 
-    <p><strong>Zweck der Verarbeitung</strong><br>
-    Die Daten werden ausschließlich verwendet zur Darstellung von Energiepreisen, Analyse des Verbrauchs und zur Visualisierung.</p>
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
 
-    <p><strong>Speicherung der Daten</strong><br>
-    Zugangsdaten und API-Schlüssel werden lokal auf dem Gerät gespeichert. Es erfolgt keine Speicherung auf eigenen Servern und keine Weitergabe an Dritte.</p>
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        h2 { font-size: 1.5rem; border-bottom: 2px solid var(--accent-color); padding-bottom: 5px; margin-top: 40px; }
+        
+        .badge {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
 
-    <p><strong>Rechtsgrundlage</strong><br>
-    Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) sowie Einwilligung.</p>
+        .card {
+            background-color: var(--secondary-bg);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 30px;
+        }
 
-    <p><strong>Drittanbieter</strong><br>
-    Diese App nutzt die API von Octopus Energy:<br>
-    https://developer.octopus.energy/</p>
+        .disclosure {
+            font-size: 0.85rem;
+            background: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #ffeeba;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            .disclosure {
+                background: #2c2510;
+                color: #ffeeba;
+                border-left-color: #856404;
+            }
+        }
 
-    <p><strong>Sicherheit</strong><br>
-    Die Datenübertragung erfolgt verschlüsselt (HTTPS).</p>
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
 
-    <p><strong>Rechte der Nutzer</strong><br>
-    Nutzer haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung.</p>
-  </div>
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #888;
+        }
 
-  <div class="section">
-    <h2>Haftungsausschluss</h2>
-    <p>Diese App ist ein inoffizielles Tool und steht in keiner Verbindung zu Octopus Energy.</p>
-    <p>Alle dargestellten Daten werden ohne Gewähr bereitgestellt. Es wird keine Garantie für Richtigkeit oder Vollständigkeit übernommen.</p>
-    <p>Die Nutzung erfolgt auf eigenes Risiko. Der Entwickler übernimmt keine Haftung für Schäden oder finanzielle Verluste.</p>
-  </div>
+        .legal-box {
+            font-size: 0.9rem;
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
 
-  <div class="section">
-    <h2>Impressum</h2>
-    <p>Angaben gemäß § 5 DDG</p>
-    <p>
-      Stefan Abeßer<br>
-      Friedrichring 5<br>
-      79098 Freiburg im Breisgau
-    </p>
+    <div class="container">
+        <header>
+            <h1>Wattcher ⚡</h1>
+            <span class="badge">Inoffizieller Octopus Energy Tracker</span>
+            <p>Einfach, schnell und übersichtlich. Behalte deine Energiepreise im Griff.</p>
+        </header>
 
-    <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:<br>
-    Stefan Abeßer</p>
-  </div>
+        <section class="card">
+            <h2>Über die App</h2>
+            <p>Wattcher ist dein Begleiter für den dynamischen Strommarkt. Analysiere deinen Verbrauch und finde die günstigsten Stunden des Tages.</p>
+            
+            <div class="disclosure">
+                <strong>Transparenz-Hinweis:</strong> 
+                Die Nutzung der App ist kostenlos. Wenn du die App unterstützen möchtest, kannst du dies über ein freiwilliges Trinkgeld tun oder meinen Empfehlungslink für Octopus Energy nutzen. Für dich entstehen dabei keine Kosten, aber wir erhalten beide eine Prämie.
+            </div>
+            
+            <p><strong>Support:</strong> Bei Problemen erreichst du mich unter: <br>
+            <em>[Deine E-Mail hier eintragen]</em></p>
+        </section>
 
-  <div class="footer">
-    <p>© 2026 Wattcher</p>
-  </div>
+        <section id="privacy">
+            <h2>Datenschutzerklärung</h2>
+            <div class="legal-box">
+                <strong>1. Datenverarbeitung</strong>
+                Wattcher ist auf Datensparsamkeit ausgelegt. Alle sensiblen Daten wie dein <strong>Octopus API-Schlüssel</strong> werden ausschließlich <strong>lokal auf deinem Endgerät</strong> verschlüsselt gespeichert.
+
+                <strong>2. Externe Aufrufe</strong>
+                Die App kommuniziert direkt mit der offiziellen Octopus Energy API (api.octopus.energy). Es findet kein Datenaustausch mit Servern des Entwicklers statt.
+
+                <strong>3. Verantwortlicher</strong>
+                Stefan Abeßer
+                Friedrichring 5, 79098 Freiburg im Breisgau
+                E-Mail: <!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wattcher | Dein Octopus Energy Tracker</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1a1a1a;
+            --accent-color: #00d1b2; /* Ein frisches "Energy"-Grün/Türkis */
+            --secondary-bg: #f5f5f5;
+            --card-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121212;
+                --text-color: #e0e0e0;
+                --secondary-bg: #1e1e1e;
+                --card-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        h2 { font-size: 1.5rem; border-bottom: 2px solid var(--accent-color); padding-bottom: 5px; margin-top: 40px; }
+        
+        .badge {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .card {
+            background-color: var(--secondary-bg);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 30px;
+        }
+
+        .disclosure {
+            font-size: 0.85rem;
+            background: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #ffeeba;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            .disclosure {
+                background: #2c2510;
+                color: #ffeeba;
+                border-left-color: #856404;
+            }
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        .legal-box {
+            font-size: 0.9rem;
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Wattcher ⚡</h1>
+            <span class="badge">Inoffizieller Octopus Energy Tracker</span>
+            <p>Einfach, schnell und übersichtlich. Behalte deine Energiepreise im Griff.</p>
+        </header>
+
+        <section class="card">
+            <h2>Über die App</h2>
+            <p>Wattcher ist dein Begleiter für den dynamischen Strommarkt. Analysiere deinen Verbrauch und finde die günstigsten Stunden des Tages.</p>
+            
+            <div class="disclosure">
+                <strong>Transparenz-Hinweis:</strong> 
+                Die Nutzung der App ist kostenlos. Wenn du die App unterstützen möchtest, kannst du dies über ein freiwilliges Trinkgeld tun oder meinen Empfehlungslink für Octopus Energy nutzen. Für dich entstehen dabei keine Kosten, aber wir erhalten beide eine Prämie.
+            </div>
+            
+            <p><strong>Support:</strong> Bei Problemen erreichst du mich unter: <br>
+            <em>encirith@gmx.de</em></p>
+        </section>
+
+        <section id="privacy">
+            <h2>Datenschutzerklärung</h2>
+            <div class="legal-box">
+                <strong>1. Datenverarbeitung</strong>
+                Wattcher ist auf Datensparsamkeit ausgelegt. Alle sensiblen Daten wie dein <strong>Octopus API-Schlüssel</strong> werden ausschließlich <strong>lokal auf deinem Endgerät</strong> verschlüsselt gespeichert.
+
+                <strong>2. Externe Aufrufe</strong>
+                Die App kommuniziert direkt mit der offiziellen Octopus Energy API (api.octopus.energy). Es findet kein Datenaustausch mit Servern des Entwicklers statt.
+
+                <strong>3. Verantwortlicher</strong>
+                Stefan Abeßer
+                Friedrichring 5, 79098 Freiburg im Breisgau
+                E-Mail: encirith@gmx.de
+
+                <strong>4. Deine Rechte</strong>
+                Da keine Daten auf meinen Servern gespeichert werden, kannst du deine Daten jederzeit löschen, indem du die App-Daten in deinen Systemeinstellungen löschst oder die App deinstallierst.
+            </div>
+        </section>
+
+        <section id="imprint">
+            <h2>Impressum</h2>
+            <div class="legal-box">
+                Angaben gemäß § 5 DDG:
+                
+                Stefan Abeßer
+                Friedrichring 5
+                79098 Freiburg im Breisgau
+
+                Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:
+                Stefan Abeßer
+            </div>
+        </section>
+
+        <section id="disclaimer">
+            <h2>Haftungsausschluss</h2>
+            <p>Diese App ist ein unabhängiges Projekt und steht in keiner rechtlichen Verbindung zu Octopus Energy Ltd. oder deren Tochtergesellschaften. Die dargestellten Preisdaten dienen der Information; für Abrechnungszwecke sind ausschließlich die Daten deines Energieversorgers maßgeblich.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Stefan Abeßer. "Octopus Energy" ist eine eingetragene Marke der Octopus Energy Group.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
+
+                <strong>4. Deine Rechte</strong>
+                Da keine Daten auf meinen Servern gespeichert werden, kannst du deine Daten jederzeit löschen, indem du die App-Daten in deinen Systemeinstellungen löschst oder die App deinstallierst.
+            </div>
+        </section>
+
+        <section id="imprint">
+            <h2>Impressum</h2>
+            <div class="legal-box">
+                Angaben gemäß § 5 DDG:
+                
+                Stefan Abeßer
+                Friedrichring 5
+                79098 Freiburg im Breisgau
+
+                Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:
+                Stefan Abeßer
+            </div>
+        </section>
+
+        <section id="disclaimer">
+            <h2>Haftungsausschluss</h2>
+            <p>Diese App ist ein unabhängiges Projekt und steht in keiner rechtlichen Verbindung zu Octopus Energy Ltd. oder deren Tochtergesellschaften. Die dargestellten Preisdaten dienen der Information; für Abrechnungszwecke sind ausschließlich die Daten deines Energieversorgers maßgeblich.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Stefan Abeßer. "Octopus Energy" ist eine eingetragene Marke der Octopus Energy Group.</p>
+        </footer>
+    </div>
+
+</body>
+</html>]</em></p>
+        </section>
+
+        <section id="privacy">
+            <h2>Datenschutzerklärung</h2>
+            <div class="legal-box">
+                <strong>1. Datenverarbeitung</strong>
+                Wattcher ist auf Datensparsamkeit ausgelegt. Alle sensiblen Daten wie dein <strong>Octopus API-Schlüssel</strong> werden ausschließlich <strong>lokal auf deinem Endgerät</strong> verschlüsselt gespeichert.
+
+                <strong>2. Externe Aufrufe</strong>
+                Die App kommuniziert direkt mit der offiziellen Octopus Energy API (api.octopus.energy). Es findet kein Datenaustausch mit Servern des Entwicklers statt.
+
+                <strong>3. Verantwortlicher</strong>
+                Stefan Abeßer
+                Friedrichring 5, 79098 Freiburg im Breisgau
+                E-Mail: encirith@gmx.de
+
+                <strong>4. Deine Rechte</strong>
+                Da keine Daten auf meinen Servern gespeichert werden, kannst du deine Daten jederzeit löschen, indem du die App-Daten in deinen Systemeinstellungen löschst oder die App deinstallierst.
+            </div>
+        </section>
+
+        <section id="imprint">
+            <h2>Impressum</h2>
+            <div class="legal-box">
+                Angaben gemäß § 5 DDG:
+                
+                Stefan Abeßer
+                Friedrichring 5
+                79098 Freiburg im Breisgau
+
+                Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:
+                Stefan Abeßer
+            </div>
+        </section>
+
+        <section id="disclaimer">
+            <h2>Haftungsausschluss</h2>
+            <p>Diese App ist ein unabhängiges Projekt und steht in keiner rechtlichen Verbindung zu Octopus Energy Ltd. oder deren Tochtergesellschaften. Die dargestellten Preisdaten dienen der Information; für Abrechnungszwecke sind ausschließlich die Daten deines Energieversorgers maßgeblich.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Stefan Abeßer. "Octopus Energy" ist eine eingetragene Marke der Octopus Energy Group.</p>
+        </footer>
+    </div>
 
 </body>
 </html>
